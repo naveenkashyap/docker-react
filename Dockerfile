@@ -8,4 +8,5 @@ RUN npm run build
 
 # step 1: run phase
 FROM nginx
+EXPOSE 80
 COPY --from=0 /app/build /usr/share/nginx/html
